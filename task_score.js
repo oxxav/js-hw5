@@ -9,7 +9,14 @@ average = Math.ceil(average);
 console.log(average);
 
 let newName = "Oksana";
-let surname = "Savoskina";
-let fullName = newName + " " + surname;
+// let oLetter=newName.slice(0, 1)
+// let surname = "Savoskina";
+// let fullName = oLetter + "." + " " + surname;
 
-console.log(`Average value ${average} for ${fullName} `);
+let surname = "Savoskina";
+let fullName = newName + "." + " " + surname;
+
+let fullNameShort =
+  fullName.slice(0, 1) + fullName.slice(newName.length, fullName.length);
+
+console.log(`Average value ${average} for ${fullNameShort} `);
